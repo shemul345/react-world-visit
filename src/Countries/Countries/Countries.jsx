@@ -32,7 +32,7 @@ const Countries = ({ countriesPromise }) => {
             </ol>
             <div className='visited-flag-container'>
                 {
-                    visitedFlag.map(flag =><img src={flag}></img>)
+                    visitedFlag.map((flag,index) =><img key={index} src={flag}></img>)
                 }
             </div>
             <div className='countries-container'>
